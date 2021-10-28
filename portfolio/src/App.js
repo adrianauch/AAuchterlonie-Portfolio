@@ -1,12 +1,12 @@
-
-
-import Navigation from './navigation/navigation'
+import Navigation from "./components/navigation/navigation";
+import PreviousWork from "./components/previousExperience/previousExperience";
+import Hero from "./components/Hero/Hero";
 
 function App() {
   return (
     <div className="App">
-      <Navigation/>
-      
+      <Navigation />
+      <Hero />
     </div>
   );
 }
