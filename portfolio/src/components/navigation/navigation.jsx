@@ -1,5 +1,5 @@
 // import - css
-import { Offcanvas, Nav, Navbar, NavDropdown, Container } from 'react-bootstrap'
+import {  Nav, Navbar, NavDropdown, Container, Link } from 'react-bootstrap'
 // import router 
 import {
     BrowserRouter as Router,
@@ -19,7 +19,21 @@ import Projects from '../projects/project.jsx';
 
 function navigation() {
     return (
-        <div>Navbar</div>
+    <header>
+        
+    <Navbar bg="dark" variant="dark">
+    <Container>
+    <Navbar.Brand href="#home">Adrian Auchterlonie</Navbar.Brand>
+    <Nav className="me-auto">
+      <Nav.Link href="#home">About</Nav.Link>
+      <Nav.Link href="#features">Work</Nav.Link>
+      <Nav.Link href="#features">Contact</Nav.Link>
+      <Nav.Link href="#pricing">Resume</Nav.Link>
+    </Nav>
+    </Container>
+    </Navbar>
+
+    </header>
 
         
     )
