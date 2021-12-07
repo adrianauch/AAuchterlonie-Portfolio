@@ -1,4 +1,5 @@
 // import - css
+import React from "react";
 import {  Nav, Navbar, NavDropdown, Container, Link } from 'react-bootstrap'
 // import router 
 import {
@@ -7,43 +8,60 @@ import {
     Route,
   } from "react-router-dom";
 // Import other modules 
-import AboutMe from '../aboutMe/aboutMe.jsx';
-import ContactMe from '../contactMe/contactMe.jsx';
-import PreviousWork from '../previousExperience/previousExperience.jsx';
-import Projects from '../projects/project.jsx';
+import AboutMe from '../aboutMe/aboutMe';
+import ContactMe from '../contactMe/contactMe';
+import PreviousWork from '../previousExperience/previousExperience';
+import Projects from '../projects/project';
+import Home from '../Hero/Hero'
 
 
 
 
 // navbar code 
-
-function navigation() {
+class BootstrapNavbar extends React.Component {
+  render() {
     return (
-    <header>
-        
-    <Navbar bg="dark" variant="dark">
-    <Container>
-    <Navbar.Brand href="#home">Adrian Auchterlonie</Navbar.Brand>
-    <Nav className="me-auto">
-      <Nav.Link href="#home">About</Nav.Link>
-      <Nav.Link href="#features">Work</Nav.Link>
-      <Nav.Link href="#features">Contact</Nav.Link>
-      <Nav.Link href="#pricing">Resume</Nav.Link>
-    </Nav>
-    </Container>
-    </Navbar>
-
-    </header>
-
-        
-    )
-
-
-
-
-
-
-
+      <div>
+        <div className="row">
+          <div className="col-md-12">
+            
+            <Router>
+              <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
+                <Navbar.Brand href="/">Adrian Auchterlonie</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                  <Nav className="mr-auto">
+                    <Nav.Link href="/aboutme">About Me</Nav.Link>
+                    <Nav.Link href="/projects">Projects</Nav.Link>
+                    <Nav.Link href="/works">Previous Work</Nav.Link>
+                    <Nav.Link href="/contactme">Contact Me</Nav.Link>
+                  </Nav>
+                </Navbar.Collapse>
+              </Navbar>
+              <br />
+              <Switch>
+                <Route exact path="/">
+                  <Home />
+                </Route>
+                <Route exact path="/aboutme">
+                  <AboutMe/>
+                </Route>
+                <Route exact path="/projects">
+                  <Projects/>
+                </Route>
+                <Route  exact path="/works">
+                  <PreviousWork />
+                </Route>
+                <Route exact path="/contactme">
+                  <ContactMe/>
+                </Route>
+              </Switch>
+            </Router>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
-export default navigation
+export default BootstrapNavbar;

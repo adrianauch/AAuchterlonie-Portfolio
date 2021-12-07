@@ -1,6 +1,7 @@
 // Imports 
 import './previousExperience.css'
 import { Chrono } from "react-chrono";
+import PreWorkHeader from  "../Header/previousworkheader"
 
 import {Container} from 'react-bootstrap'
 
@@ -17,7 +18,7 @@ function previousWork () {
         title: "2019 - 2021",
         cardTitle: "Workforce Management Analyst",
         cardSubtitle:"ezCater",
-        cardDetailedText: "..........",
+        cardDetailedText: "Worked within the customer service organization to report real-time trends around our daily call volume, shrink and average handle time. Monitor inbound communication volumes throughout the day to maintain our high service level agreement; allocates workforce resources to maximize headcount for customer service quality. Worked with a team to forecast for future trends, hiring planning and created staffin plans for upcoming holidays. Supported implementation of process improvements and technology upgrades.",
           
       },
       {
@@ -38,12 +39,15 @@ function previousWork () {
 
 
     return (
+      
        <Container>
+         <div>
+           <PreWorkHeader/>
+         </div>
         <div>
-            <h1> Previous Work History</h1>
-        <div style={{ width: "70%", height: "100%"  }}>
+          
+        <div style={{ width: "100%", height: "100%"  }}>
         <Chrono items={items} 
-       mode= "VERTICAL_ALTERNATING"
         theme={{ 
             primary: "black",
             secondary: "lightgrey",
@@ -80,3 +84,4 @@ function previousWork () {
 
 
 export default previousWork
+// mode= "VERTICAL_ALTERNATING"

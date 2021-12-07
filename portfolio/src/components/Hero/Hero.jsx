@@ -1,10 +1,14 @@
-
+import "../Hero/hero.css"
 
 function Hero (){
     return (
-        <div>
-            <h1>Hero</h1>
-        </div>
+      <div className="hero-image">
+      <div className="hero-text">
+        <h1>I am John Doe</h1>
+        <p>And I'm a Photographer</p>
+        <button>Hire me</button>
+      </div>
+    </div>
     )
 }
 

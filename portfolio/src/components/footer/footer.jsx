@@ -8,7 +8,7 @@ function footer() {
   
 
   return (
-    <Container>
+    <Container sticky="bottom">
     <Row>
       <Col><BsLinkedin/></Col>
       <Col><BsFillHouseDoorFill/></Col>

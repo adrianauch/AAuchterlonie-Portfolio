@@ -3,7 +3,7 @@ import {Form, Col, Row, Button,Container} from 'react-bootstrap'
 
 // react funtion 
 
-function contactMe (){
+export const contactMe = () => {
 
     return (
         <Container>
