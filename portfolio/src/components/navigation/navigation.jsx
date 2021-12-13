@@ -26,11 +26,11 @@ class BootstrapNavbar extends React.Component {
           <div className="col-md-12">
             
             <Router>
-              <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
+              <Navbar bg="dark" variant="dark" expand="lg" sticky="top" className="m-auto">
                 <Navbar.Brand href="/">Adrian Auchterlonie</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                  <Nav className="mr-auto">
+                  <Nav className="justify-content-end">
                     <Nav.Link href="/aboutme">About Me</Nav.Link>
                     <Nav.Link href="/projects">Projects</Nav.Link>
                     <Nav.Link href="/works">Previous Work</Nav.Link>
