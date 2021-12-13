@@ -7,7 +7,10 @@ export const Projects = () => {
 
     return (
     <Container>
-        <h1>Projects</h1>
+        <div className="header">
+        <h1>Projects </h1>
+        <p> Want to Learn More? Drop me a line. </p>
+        </div>
     <CardGroup>
   <Card>
     <Card.Img variant="top" src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" />
@@ -24,7 +27,10 @@ export const Projects = () => {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Links here?</small>
+      <small className="text-muted">
+        <a href="https://github.com/Korbin-Sargent/vacation-planning-app">Repository |</a>
+        <a href="https://grip-your-trip.herokuapp.com/"> | Deployed</a>
+      </small>
     </Card.Footer>
   </Card>
   <Card>
@@ -43,7 +49,9 @@ export const Projects = () => {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Links here?</small>
+      <small className="text-muted">
+        <a href="https://github.com/adrianauch/Employee-Management-System"> Repository</a>
+      </small>
     </Card.Footer>
   </Card>
   <Card>
@@ -64,7 +72,10 @@ export const Projects = () => {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Links here?</small>
+      <small className="text-muted">
+      <a href="https://github.com/HavoxPrime/NFTy">Repository |</a>
+        <a href="https://project2-nfty.herokuapp.com/"> | Deployed</a>
+      </small>
     </Card.Footer>
   </Card>
 </CardGroup>
@@ -84,7 +95,11 @@ export const Projects = () => {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Links here?</small>
+      <small className="text-muted">
+      <a href="https://github.com/adrianauch/Workout-Tracker">Repository |</a>
+        <a href="https://polar-peak-65813.herokuapp.com/ "> | Deployed</a>
+      
+      </small>
     </Card.Footer>
   </Card>
   <Card>
@@ -104,7 +119,10 @@ export const Projects = () => {
       
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Links here?</small>
+      <small className="text-muted">
+      <a href="https://github.com/adrianauch/WeatherDashBoard-hw">Repository |</a>
+        <a href="https://adrianauch.github.io/WeatherDashBoard-hw/"> | Deployed</a>
+      </small>
     </Card.Footer>
   </Card>
   <Card>
@@ -122,7 +140,10 @@ export const Projects = () => {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Links here?</small>
+      <small className="text-muted">
+      <a href="https://stark-gorge-39407.herokuapp.com/ ">Repository |</a>
+        <a href="https://github.com/adrianauch/Budget-Tracker"> | Deployed</a>
+      </small>
     </Card.Footer>
   </Card>
 </CardGroup>

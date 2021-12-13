@@ -12,10 +12,11 @@ function Hero (){
         
         <Col className="para">
           <div>
-         <p>Hi There! </p>
-         <p>My name is Adrian Auchterlonie. Welcome to my portfolio.</p>
+         <p>Hi There! 👋 </p>
+         <p>My name is Adrian Auchterlonie</p>
           <p>I'm a Denver based Full-Stack developer with a background in customer service analytics. I have a passion for problem-solving, data and project management and I am looking to build applications with a user in mind to push businesses forward.</p>
           <p>Want to Say Hi?</p>
+
           </div>
           
           </Col>
