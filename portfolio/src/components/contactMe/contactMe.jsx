@@ -1,42 +1,54 @@
-import {Form, Col, Row, Button,Container} from 'react-bootstrap'
-
+import {Form, Col, Row, Button,Container,Alert} from 'react-bootstrap'
+import emailjs from 'emailjs-com'
+import React, { useState } from 'react';
 
 // react funtion 
 
 export const contactMe = () => {
+ 
+  
+  function sendEmail(e){
+    e.preventDefault()
+    emailjs.sendForm('service_7ofjn2e', 'template_ap2rtdh', e.target, 'user_85n5i21qetSuWC6SMtFsl')
+    .then ((res)=>{
+      console.log(res)
+    },
+    (err)=> {
+      console.log(err)
+    }
+    )
+
+  }
 
     return (
         <Container>
-        <Form>
+        <Form onSubmit={sendEmail}>
   <Row className="mb-3">
     <Form.Group as={Col} controlId="formGridEmail">
-      <Form.Label>First Name</Form.Label>
-      <Form.Control type="input" placeholder="First Name" />
+      <Form.Label>First & Last Name</Form.Label>
+      <Form.Control type="input" placeholder="First & Last Name" name="name" />
+    </Form.Group>
+    <Form.Group as={Col} controlId="formGridEmail">
+      <Form.Label>Email</Form.Label>
+      <Form.Control type="email" placeholder="Email" name="user_email" />
     </Form.Group>
 
-    <Form.Group as={Col} controlId="formGridPassword">
-      <Form.Label>Last Name</Form.Label>
-      <Form.Control type="input" placeholder="Last Name" />
-    </Form.Group>
+    
   </Row>
 
 
   <Row className="mb-3">
-    <Form.Group as={Col} controlId="formGridEmail">
-      <Form.Label>Email</Form.Label>
-      <Form.Control type="email" placeholder="Email" />
-    </Form.Group>
 
     <Form.Group as={Col} controlId="formGridPassword">
-      <Form.Label>Phone Number</Form.Label>
-      <Form.Control type="Phone Number" placeholder="Phone Number" />
+      <Form.Label>Subject</Form.Label>
+      <Form.Control type="input" placeholder="Subject" name='subject' />
     </Form.Group>
   </Row>
   <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
     <Form.Label>Message</Form.Label>
-    <Form.Control as="textarea" rows={3} />
+    <Form.Control as="textarea" rows={3}  placeholder="Message" name='message'/>
   </Form.Group>
-  <Button variant="primary" type="submit">
+  <Button variant="dark" type="submit" value='send' >
     Submit
   </Button>
 </Form>

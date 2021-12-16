@@ -8,7 +8,15 @@ import {Container} from 'react-bootstrap'
 // React Funtion
 
 function previousWork () {
-    const items = [{
+    const items = [
+      {
+        title: "2021",
+        cardTitle: "Scrum Alliance",
+        cardSubtitle:"Certified Scrum Master Certificate",
+        cardDetailedText: "Completed the certified Scrum Master course and passed the exam with a 98%. I learned how to facilitate scrum to the larger team by ensuring the scrum framework is followed. Additionally, learned the scrum values and practices.",
+
+      },
+      {
         title: "2021",
         cardTitle: "University of Denver",
         cardSubtitle:"Bootcamp Certificate",
@@ -48,6 +56,7 @@ function previousWork () {
           
         <div style={{ width: "100%", height: "100%"  }}>
         <Chrono items={items} 
+        mode="VERTICAL_ALTERNATING"
         theme={{ 
             primary: "black",
             secondary: "lightgrey",
@@ -56,6 +65,10 @@ function previousWork () {
             titleColor: "black"
           }}> 
           <div className="chrono-icons">
+          <img
+               src="https://img.icons8.com/ios-filled/90/000000/student-female.png"
+              alt="graduation cap"
+            />
             <img
                src="https://img.icons8.com/ios-filled/90/000000/student-female.png"
               alt="graduation cap"

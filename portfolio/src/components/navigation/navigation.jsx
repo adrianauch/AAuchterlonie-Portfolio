@@ -1,6 +1,7 @@
 // import - css
 import React from "react";
 import {  Nav, Navbar, NavDropdown, Container, Link } from 'react-bootstrap'
+import {BsHouseDoor} from 'react-icons/bs'
 // import router 
 import {
     BrowserRouter as Router,
@@ -13,6 +14,9 @@ import ContactMe from '../contactMe/contactMe';
 import PreviousWork from '../previousExperience/previousExperience';
 import Projects from '../projects/project';
 import Home from '../Hero/Hero'
+import logo from '../navigation/jolly.png'
+import '../navigation/navigation.css'
+
 
 
 
@@ -27,10 +31,13 @@ class BootstrapNavbar extends React.Component {
             
             <Router>
               <Navbar bg="dark" variant="dark" expand="lg" sticky="top" className="m-auto">
-                <Navbar.Brand href="/">Adrian Auchterlonie</Navbar.Brand>
+              <Navbar.Brand href="/">
+                     <BsHouseDoor/>
+                    </Navbar.Brand>
+               
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                  <Nav className="justify-content-end">
+                  <Nav className="m-auto ">
                     <Nav.Link href="/aboutme">About Me</Nav.Link>
                     <Nav.Link href="/projects">Projects</Nav.Link>
                     <Nav.Link href="/works">Previous Work</Nav.Link>

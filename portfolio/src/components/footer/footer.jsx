@@ -18,7 +18,7 @@ function footer() {
       <Nav.Link href="https://github.com/adrianauch">
         <BsGithub/>
       </Nav.Link>
-      <Navbar.Brand href="/homepage">Adrian Auchterlonie</Navbar.Brand>
+      <Navbar.Brand href="/">Adrian Auchterlonie</Navbar.Brand>
 
       <Nav.Link href="mailto:adrian.auch11@gmail.com">
         <BsFillEnvelopeFill/>
