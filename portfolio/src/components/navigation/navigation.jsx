@@ -31,7 +31,7 @@ class BootstrapNavbar extends React.Component {
             
             <Router>
               <Navbar bg="dark" variant="dark" expand="lg" sticky="top" className="m-auto">
-              <Navbar.Brand href="/">
+              <Navbar.Brand  style={{color:"#9a9d9f"}}href="/">
                      <BsHouseDoor/>
                     </Navbar.Brand>
                

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import {Container, Row, Col,Button, Offcanvas, Card, CardGroup} from 'react-bootstrap'
-
+import {BsLinkedin,BsGithub,BsFillPenFill,BsFillEnvelopeFill} from 'react-icons/bs'
 export const Projects = () => {
 
 
@@ -9,7 +9,13 @@ export const Projects = () => {
     <Container>
         <div className="header">
         <h1>Projects </h1>
-        <p> Want to Learn More? Drop me a line. </p>
+        <p> Want to Learn More? <a href="/contactme" style={{color:"white"}}> Let's Talk! </a></p>
+        <p>
+                  <a className="link" href="https://www.linkedin.com/in/adrianauch/"><BsLinkedin/></a>
+                  <a className="link" href="mailto:adrianauchterlonie"><BsFillEnvelopeFill/></a>
+                  <a href="/conactme"><BsFillPenFill/></a>
+        </p>
+        
         </div>
     <CardGroup>
   <Card>
