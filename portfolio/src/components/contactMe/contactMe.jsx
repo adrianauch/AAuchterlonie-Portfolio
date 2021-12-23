@@ -1,12 +1,13 @@
-import {Form, Col, Row, Button,Container,Alert} from 'react-bootstrap'
+//Imports
+import {Form, Col, Row, Button,Container} from 'react-bootstrap'
 import emailjs from 'emailjs-com'
-import React, { useState } from 'react';
+
 
 // react funtion 
 
 export const contactMe = () => {
  
-  
+  //emailjs function
   function sendEmail(e){
     e.preventDefault()
     emailjs.sendForm('service_7ofjn2e', 'template_ap2rtdh', e.target, 'user_85n5i21qetSuWC6SMtFsl')

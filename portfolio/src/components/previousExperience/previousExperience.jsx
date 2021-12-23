@@ -1,11 +1,11 @@
 // Imports 
 import './previousExperience.css'
 import { Chrono } from "react-chrono";
-import PreWorkHeader from  "../Header/previousworkheader"
+import PreWorkHeader from  "../previousExperience/Header/previousworkheader"
 
 import {Container} from 'react-bootstrap'
 
-// React Funtion
+// React Function
 
 function previousWork () {
     const items = [

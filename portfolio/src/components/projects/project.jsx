@@ -1,6 +1,9 @@
-import { useState } from 'react';
-import {Container, Row, Col,Button, Offcanvas, Card, CardGroup} from 'react-bootstrap'
-import {BsLinkedin,BsGithub,BsFillPenFill,BsFillEnvelopeFill} from 'react-icons/bs'
+//imports
+import {Container,  Card, CardGroup} from 'react-bootstrap'
+import {BsLinkedin,BsFillPenFill,BsFillEnvelopeFill} from 'react-icons/bs'
+
+
+//react function
 export const Projects = () => {
 
 
@@ -11,9 +14,9 @@ export const Projects = () => {
         <h1>Projects </h1>
         <p> Want to Learn More? <a href="/contactme" style={{color:"white"}}> Let's Talk! </a></p>
         <p>
-                  <a className="link" href="https://www.linkedin.com/in/adrianauch/"><BsLinkedin/></a>
-                  <a className="link" href="mailto:adrianauchterlonie"><BsFillEnvelopeFill/></a>
-                  <a href="/conactme"><BsFillPenFill/></a>
+                  <a className="link" href="https://www.linkedin.com/in/adrianauch/" target="_blank"><BsLinkedin/></a>
+                  <a className="link" href="mailto:adrianauchterlonie" target="_blank"><BsFillEnvelopeFill/></a>
+                  <a href="/contactme"><BsFillPenFill/></a>
         </p>
         
         </div>
@@ -34,8 +37,8 @@ export const Projects = () => {
     </Card.Body>
     <Card.Footer>
       <small className="text-muted">
-        <a href="https://github.com/Korbin-Sargent/vacation-planning-app">Repository |</a>
-        <a href="https://grip-your-trip.herokuapp.com/"> | Deployed</a>
+        <a href="https://github.com/Korbin-Sargent/vacation-planning-app" target="_blank">Repository |</a>
+        <a href="https://grip-your-trip.herokuapp.com/" target="_blank"> | Deployed</a>
       </small>
     </Card.Footer>
   </Card>
@@ -56,7 +59,7 @@ export const Projects = () => {
     </Card.Body>
     <Card.Footer>
       <small className="text-muted">
-        <a href="https://github.com/adrianauch/Employee-Management-System"> Repository</a>
+        <a href="https://github.com/adrianauch/Employee-Management-System" target="_blank"> Repository</a>
       </small>
     </Card.Footer>
   </Card>
@@ -79,8 +82,8 @@ export const Projects = () => {
     </Card.Body>
     <Card.Footer>
       <small className="text-muted">
-      <a href="https://github.com/HavoxPrime/NFTy">Repository |</a>
-        <a href="https://project2-nfty.herokuapp.com/"> | Deployed</a>
+      <a href="https://github.com/HavoxPrime/NFTy" target="_blank">Repository |</a>
+        <a href="https://project2-nfty.herokuapp.com/" target="_blank"> | Deployed</a>
       </small>
     </Card.Footer>
   </Card>
@@ -102,8 +105,8 @@ export const Projects = () => {
     </Card.Body>
     <Card.Footer>
       <small className="text-muted">
-      <a href="https://github.com/adrianauch/Workout-Tracker">Repository |</a>
-        <a href="https://polar-peak-65813.herokuapp.com/ "> | Deployed</a>
+      <a href="https://github.com/adrianauch/Workout-Tracker" target="_blank">Repository |</a>
+        <a href="https://polar-peak-65813.herokuapp.com/" target="_blank"> | Deployed</a>
       
       </small>
     </Card.Footer>
@@ -126,8 +129,8 @@ export const Projects = () => {
     </Card.Body>
     <Card.Footer>
       <small className="text-muted">
-      <a href="https://github.com/adrianauch/WeatherDashBoard-hw">Repository |</a>
-        <a href="https://adrianauch.github.io/WeatherDashBoard-hw/"> | Deployed</a>
+      <a href="https://github.com/adrianauch/WeatherDashBoard-hw" target="_blank">Repository |</a>
+        <a href="https://adrianauch.github.io/WeatherDashBoard-hw/" target="_blank"> | Deployed</a>
       </small>
     </Card.Footer>
   </Card>
@@ -147,8 +150,8 @@ export const Projects = () => {
     </Card.Body>
     <Card.Footer>
       <small className="text-muted">
-      <a href="https://stark-gorge-39407.herokuapp.com/ ">Repository |</a>
-        <a href="https://github.com/adrianauch/Budget-Tracker"> | Deployed</a>
+      <a href="https://stark-gorge-39407.herokuapp.com/" target="_blank">Repository |</a>
+        <a href="https://github.com/adrianauch/Budget-Tracker" target="_blank"> | Deployed</a>
       </small>
     </Card.Footer>
   </Card>

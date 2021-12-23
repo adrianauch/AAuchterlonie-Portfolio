@@ -1,6 +1,6 @@
 // import - css
 import React from "react";
-import {  Nav, Navbar, NavDropdown, Container, Link } from 'react-bootstrap'
+import {  Nav, Navbar  } from 'react-bootstrap'
 import {BsHouseDoor} from 'react-icons/bs'
 // import router 
 import {
@@ -14,7 +14,7 @@ import ContactMe from '../contactMe/contactMe';
 import PreviousWork from '../previousExperience/previousExperience';
 import Projects from '../projects/project';
 import Home from '../Hero/Hero'
-import logo from '../navigation/jolly.png'
+
 import '../navigation/navigation.css'
 
 
